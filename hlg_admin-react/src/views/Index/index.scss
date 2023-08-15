@@ -1,0 +1,27 @@
+.index{
+    height: 100%;
+    .lay-box{
+        .logo{
+            color: #fff;
+            text-align: center;
+            margin: 20px 0;
+            font-size: 22px;
+            font-weight: bold;
+        }
+        .right-header{
+            display: flex;
+            justify-content: space-between;
+            .right{
+                color: #fff;
+                padding-right: 10px;
+                span{
+                    margin: 0 5px;
+                }
+            }
+        }
+        .main{
+           min-height: 280px;
+            margin: 24px 16px;
+        }
+    }
+}

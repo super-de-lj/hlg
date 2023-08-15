@@ -1,0 +1,44 @@
+.user{
+    height: calc(100% - 50px);
+    font-size: 14px;
+    .adm-button{
+        --background-color:none
+    }
+    .user-img{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        img{
+            height: 60px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        justify-content: center;
+        align-items: center;
+    }
+    .selectItems{
+        background: #fff;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 5px;
+        .title{
+            font-weight: 600;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        .countent{
+            display: flex;
+            justify-content: space-around;
+            .item{
+                padding: 8px 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .icon{
+                    padding: 10px 0;
+                }
+            }
+        }
+    }
+}

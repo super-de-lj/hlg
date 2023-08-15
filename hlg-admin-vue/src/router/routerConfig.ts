@@ -1,0 +1,102 @@
+export default[
+        {
+            path: '/index',
+            name: 'index',
+            component:  () => import('@/views/Index.vue'),
+            children:[
+                {
+                    //首页
+                    path:'/index/home',
+                    name:'home',
+                    component:()=>import('@/views/index/Home.vue'),
+                },
+                {
+                    //轮播图
+                    path:'/index/swiper',
+                    name:'swiper',
+                    component:()=>import('@/views/index/Swiper.vue'),
+                },
+                {
+                    //轮播图
+                    path:'/index/addswiper',
+                    name:'addswiper',
+                    component:()=>import('@/views/index/AddSwiper.vue'),
+                },
+                {
+                    //账号管理
+                    path:'/index/admin',
+                    name:'admin',
+                    component:()=>import('@/views/index/Admin.vue'),
+                },
+                {
+                    //产品列表
+                    path:'/index/pro',
+                    name:'pro',
+                    component:()=>import('@/views/index/Pro.vue'),
+                },
+                {
+                    //秒杀列表
+                    path:'/index/seckill',
+                    name:'seckill',
+                    component:()=>import('@/views/index/Seckill.vue'),
+                },
+                {
+                    //推荐列表
+                    path:'/index/recommend',
+                    name:'recommend',
+                    component:()=>import('@/views/index/Recommend.vue'),
+                },
+                {
+                    //筛选列表
+                    path:'/index/filter',
+                    name:'filter',
+                    component:()=>import('@/views/index/Filter.vue'),
+                },
+                {
+                    //可视化
+                    path:'/index/echarts',
+                    name:'echarts',
+                    component:()=>import('@/views/index/Echarts.vue'),
+                },
+                {
+                    //编辑器
+                    path:'/index/editor',
+                    name:'editor',
+                    component:()=>import('@/views/index/Editor.vue')
+                },
+                {
+                    //excel表格
+                    path:'/index/excel',
+                    name:'excel',
+                    component:()=>import('@/views/index/Excel.vue')
+                },
+                {
+                    //地图
+                    path:'/index/map',
+                    name:'map',
+                    component:()=>import('@/views/index/Map.vue')
+                },
+                {
+                    path:'/index',
+                    redirect: '/index/home'
+                },
+                {
+                    path:'/index/:error(.*)',
+                    component:()=> import('@/views/NoFound.vue')
+                }
+            ]
+        },
+        {
+          path:'/login',
+          name:'login',
+          component:()=> import('@/views/Login.vue')
+        },
+        {
+            path:'/',
+            redirect: '/index'
+        },
+        {
+            path:'/:error(.*)',
+            component:()=> import('@/views/NoFound.vue')
+        }
+]

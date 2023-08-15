@@ -1,0 +1,31 @@
+.goodlist{
+    background: #fff;
+    height: 100%;
+    .countent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+        .good{
+            width: 30%;
+            text-align: center;
+            margin-bottom: 10px;
+            img{
+                max-height: 65px;
+            }
+            .name{
+                font-size: 14px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+            .price{
+                color: red;
+                text-align: left;
+            }
+        }
+    }
+}

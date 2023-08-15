@@ -1,0 +1,44 @@
+.seckill{
+    margin: 0 6px 10px;
+    background: #fff;
+    border-radius: 5px;
+    .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        font-size: 14px;
+        .left{
+            display: flex;
+            >span{
+                margin-right: 10px;
+            }
+            .timer{
+                color: red;
+                span{
+                    color: #fff;
+                    border-radius: 5px;
+                    margin: 0 5px;
+                    background: red;
+                    padding: 5px 10px;
+                }
+            }
+        }
+    }
+    .bottom{
+        display: flex;
+        font-size: 12px;
+        justify-content: space-between;
+        color: red;
+        .item{
+            text-align: center;
+            img{
+                width: 80%;
+                margin-bottom: 10px;
+                height: 60px;
+            }
+            .text{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

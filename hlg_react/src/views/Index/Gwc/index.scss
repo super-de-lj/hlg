@@ -1,0 +1,160 @@
+.adm-nav-bar-left, .adm-nav-bar-right{
+    flex: none;
+}
+.gwc{
+    height:calc( 100% - 50px);
+    background: #fff;
+    position: relative;
+    .no-cart{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height:calc( 100% - 50px);
+        .text{
+            margin: 20px 0;
+            color: #666;
+        }
+    }
+    .deleteBtn{
+        font-weight: normal;
+        font-size: 14px;
+        color:#1989fa;
+        border: none;
+    }
+    .gwc-list{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .item{
+            background: #eee;
+            position: relative;
+            display: flex;
+            padding: 10px;
+            margin: 10px;
+            input{
+                margin-right: 8px;
+                -webkit-appearance: none;
+                appearance: none;
+                line-height: 65px;
+            }
+            /* 自定义 unchecked 状态下图标的样式 */
+            input[type="checkbox"]::before {
+                content: "√";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                border: 2px solid #999;
+                vertical-align: middle;
+                margin-right: 8px;
+                border-radius: 50%;
+                color: transparent;
+            }
+            /* 自定义 checked 状态下图标的样式 */
+            input[type="checkbox"]:checked::before {
+                color: #fff;
+                background-color: rgb(25, 137, 250);
+                border-color: rgb(25, 137, 250);
+            }
+            .center{
+                display: flex;
+                .left{
+                    max-width: 80px;
+                    img{
+                        width: 90%;
+                        border-radius: 5px;
+                    }
+                }
+                .right{
+                    flex: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    h4{
+                        font-weight: normal;
+                        font-size: 14px;
+                    }
+                    .price{
+                        color: #f66;
+                        margin: 10px 0;
+                    }
+                }
+            }
+            .btns{
+                position: absolute;
+                right: 10px;
+                bottom: 10px;
+                button{
+                    padding: 2px 8px;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                }
+                span{
+                    margin: 0 5px;
+                }
+            }
+        }
+    }
+    .submit-bar{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 8px 10px;
+        .left{
+            input{
+                margin-right: 8px;
+                -webkit-appearance: none;
+                appearance: none;
+            }
+            /* 自定义 unchecked 状态下图标的样式 */
+            input[type="checkbox"]::before {
+                content: "√";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                line-height: 16px;
+                text-align: center;
+                border: 2px solid #999;
+                vertical-align: middle;
+                margin-right: 8px;
+                border-radius: 50%;
+                color: transparent;
+            }
+            /* 自定义 checked 状态下图标的样式 */
+            input[type="checkbox"]:checked::before {
+                color: #fff;
+                background-color: rgb(25, 137, 250);
+                border-color: rgb(25, 137, 250);
+            }
+        }
+        .right{
+            display: flex;
+            align-items: center;
+            .price {
+                padding-right: 10px;
+                display: flex;
+                align-items: center;
+                white-space: nowrap;
+                font-weight: 600;
+                span{
+                    font-size: 18px;
+                    color: red;
+                }
+            }
+            .submit-btn{
+                max-width: 100px;
+                background: linear-gradient(to right,rgb(255,96,52),rgb(238,10,36));
+                color: #fff;
+                border-radius: 25px;
+            }
+        }
+    }
+}

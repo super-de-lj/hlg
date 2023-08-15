@@ -1,0 +1,55 @@
+.mytype{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    .main{
+        flex: 1;
+        display: flex;
+        overflow-y: auto;
+        .left{
+            width: 80px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            .item{
+                padding: 3px 0;
+                text-align: center;
+                .text{
+                    border-left: 3px solid transparent;
+                    margin: 8px 0 8px 5px;
+                   }
+            }
+            .item.current {
+                background: #fff;
+            }
+            .item.current .text{
+                border-left: 3px solid #f66;
+            }
+        }
+        .right{
+            flex: 1;
+            background: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            padding: 0 8px;
+            .item{
+                width: 33%;
+                // height: 80px;
+                padding-top: 30px;
+                text-align: center;
+                .name{
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    font-size: 14px;
+                    margin-top: 6px;
+                }
+                img{
+                    width: 50%;
+                }
+            }
+        }
+    }
+}

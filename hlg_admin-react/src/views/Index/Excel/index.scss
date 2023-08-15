@@ -1,0 +1,15 @@
+.excel{
+    height: 100%;
+    :deep(table) {
+        width: 100%;
+        border-collapse: collapse;
+        td {
+          border: 1px solid #ccc;
+          text-align: center;
+          height: 40px;
+        }
+        tr:nth-child(odd) {
+          background-color: lightcyan;
+        }
+     }
+}

@@ -1,0 +1,20 @@
+.home{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    .item{
+        span{
+            font-size: 16px;
+            color: #999;
+        }
+        div{
+            margin-top: 10px;
+            font-size: 24px;
+        }
+    }
+    .item:nth-child(2n){
+        div{
+            color: green;
+        }
+    }
+}

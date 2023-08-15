@@ -1,0 +1,42 @@
+.code{
+    height: 100%;
+    background: #fff;
+    overflow: hidden;
+    .form{
+        display: flex;
+        flex-direction: column;
+        margin: 30px 15px;
+        .inputItem{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5px;
+            .getcode{
+                font-size: 14px;
+                background:rgb(255, 151, 106);
+                color: #fff;
+                padding: 5px;
+                border-radius: 15px;
+            }
+        }
+        input{
+            display: block;
+            background: none;
+            outline: none;
+            border: none;
+            height: 50px;
+            padding: 15px;
+        }
+        .btn{
+            background: linear-gradient(to right,rgb(255,96,52),rgb(238,10,36));
+            padding: 10px;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 18px;
+            margin: 20px 0 10px;
+        }
+        .flag{
+            opacity: 0.5;
+        }
+    }
+}

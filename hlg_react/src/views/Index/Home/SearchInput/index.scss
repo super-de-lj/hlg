@@ -1,0 +1,27 @@
+.search{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 99;
+    height: 40px;
+    align-items: center;
+    background: rgb(255, 102, 102);
+    .left,.right{
+        width: 50px;
+        text-align: center;
+        color: #fff;
+    }
+    .center{
+        flex: 1;
+        input{
+            width: 100%;
+            height: 30px;
+            border-radius: 15px;
+            outline: none;
+            border: none;
+            padding-left: 10px;
+        }
+    }
+}

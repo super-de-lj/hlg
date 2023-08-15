@@ -1,0 +1,17 @@
+.cartlist{
+    display: flex;
+    flex-wrap: wrap;
+    background: #fff;
+    margin: 10px 0;
+    min-height: 170px;
+    padding: 10px;
+    .item{
+        width: 20%;
+        font-size: 12px;
+        text-align: center;
+        margin-bottom: 10px;
+        img{
+            width: 60%;
+        }
+    }
+}

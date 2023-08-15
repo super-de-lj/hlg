@@ -1,0 +1,94 @@
+.search-list{
+    height: 100%;
+    background: #fff;
+    padding: 0 10px;
+    .top-search{
+        display: flex;
+        padding: 10px 0;
+        .left{
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+        .input{
+            flex: 1;
+            padding: 0 10px;
+            display: flex;
+            position: relative;
+            align-items: center;
+            span{
+                padding: 0 5px;
+            }
+            input{
+                width: 100%;
+                border: none;
+                background: #eee;
+                padding: 5px;
+                border-radius: 5px;
+                outline: none;
+            }
+            button{
+                position: absolute;
+                right: 8px;
+                border: none;
+                font-size: 20px;
+                background: transparent;
+            }
+        }
+        .right{
+            padding: 0 5px;
+            display: flex;
+            align-items: center;
+        }
+    }
+    .search-list{
+        margin-top: 15px;
+        .title{
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            .left{
+                font-weight: 600;
+            }
+        }
+        .list{
+            display: flex;
+            flex-wrap: wrap;
+            .list-item{
+                background: #eee;
+                margin-right: 5px;
+                padding: 5px 10px;
+                font-size: 12px;
+                border-radius: 15px;
+            }
+        }
+       
+    }
+    .countent{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+        .good{
+            width: 30%;
+            text-align: center;
+            margin-bottom: 10px;
+            img{
+                max-height: 65px;
+            }
+            .name{
+                font-size: 14px;
+                display: -webkit-box;
+                overflow: hidden;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                margin-bottom: 5px;
+                text-align: left;
+            }
+            .price{
+                color: red;
+                text-align: left;
+            }
+        }
+    }
+}

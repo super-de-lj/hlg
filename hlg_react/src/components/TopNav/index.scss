@@ -1,0 +1,16 @@
+.top-nav{
+    height: 46px;
+    line-height: 46px;
+    background: #fff;
+    text-align: center;
+    font-weight: 600;
+    display: flex;
+    padding: 0 10px;
+    .left{
+        width: 40px;
+        color: #1989fa;
+    }
+    .text{
+        flex: 1;
+    }
+}
